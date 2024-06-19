@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif,;
+}
+
+body{
+    background:black;
+    color: rgb(255, 255, 255);
+}
+#header{
+    width: 100%;
+    height: 100dvh;
+}
+
+.img{
+    float: right;
+    display: flex;
+    padding: 10px 10% 0;
+    
+}
+
+.container{
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+}
+
+.logo{
+    font-size: 30px;
+    padding-left: 100px;
+    margin-top: 15px;
+
+    .logo-span{
+        color: rgb(255, 0, 255);
+        font-size: 33px;   
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+}
+
+
+nav{
+    background-color: rgb(34, 34, 34);
+    padding-bottom: 10px;
+
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-family: sans-serif;
+} 
+
+nav ul{
+   padding-right: 60px;
+   margin-top: 15px;
+}
+nav ul li a{
+        text-decoration: none;
+        color: white;
+        transition: .5s ;
+        font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 0, 255);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: white;
+    padding: 4px;
+    font-weight: bold; 
+}
+
+nav ul li a:hover{
+    box-shadow: 0 0 5px rgb(241, 226, 4),
+    0 0 10px rgb(241, 226, 4),
+    0 0 15px rgb(241, 226, 4),
+    0 0 20px rgb(241, 226, 4);
+}
+
+
+.my{
+    font-weight: bold;
+    color: #fff;
+}
+
+.text{
+    margin-top: -30%;
+    padding-left: 110px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.p1{
+    font-weight: bold;
+    font-size: 18px;
+}
+.p2{
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.prof{
+    color:rgb(240, 159, 8) ;
+    font-size: 20px;
+}
+
+.p3{
+    font-size: 18px;
+    font-family: poppins;
+    line-height: 25px;
+}
+
+.icons{
+    margin-top: 20px;
+}
+
+.btn{
+    border: 0;
+    outline: 0;
+    height: 30px;
+    width: 110px;
+    margin-top: 15px;
+    margin-left: 8.3%;
+    border-radius: 60px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    background: rgb(255, 0, 255);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: .2s ease-in;
+}
+/* ------hoher effects on the button---- */
+.btn:hover{
+    cursor: pointer;
+    background: rgb(255, 1, 255);
+    box-shadow: 0 0 5px rgb(241, 226, 4),
+                0 0 10px rgb(155, 145, 6),
+                0 0 15px rgb(241, 226, 4),
+                0 0 20px rgb(194, 181, 5);
+}
+
+.icons{
+    display: flex;
+   
+}
+
+.icons a{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 0 20px 10px rgba(255,255,0,0.04);
+    border-radius: 50px;
+    padding: 8px;
+    margin: 10px 10px 10px 0;
+    position: relative;
+    overflow: hidden;
+    transition:transform .5s;
+}
+
+.icons a .fab{
+    font-size: 20px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+.icons a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -45px;
+    left: 0;
+    background:linear-gradient(-45deg, #ed1c94, #ffec17);
+    position: absolute;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.icons a:hover::after{
+    top: 0;
+}
+
+.icons a:hover .fab:hover{
+    color: black;
+}
+
+.icons a:hover{
+    transform: translateY(-5px);
+}
+
+/* --------about-------- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis:35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis:60%;
+}
+.about{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
